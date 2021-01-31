@@ -1,0 +1,55 @@
+{
+	"__metadata": {
+		"id": "/odata/srv/Cp_coll_item('a815cf71-733b-408e-97e8-ef9ea42c8a7a')",
+		"uri": "/odata/srv/Cp_coll_item('a815cf71-733b-408e-97e8-ef9ea42c8a7a')",
+		"type": "COPILOT_V1_SRV.Cp_coll_itemType"
+	},
+	"changed_by": "IXXXXXX",
+	"changed_on": "2017-07-31T10:20:29.515Z",
+	"created_by": "IXXXXXX",
+	"created_on": "2017-07-31T10:20:29.515Z",
+	"item_uuid": "a815cf71-733b-408e-97e8-ef9ea42c8a7a",
+	"I18NMessage": false,
+	"parent_uuid": "6cedf945-4445-48e5-b23c-59da45679e85",
+	"ActionContext": null,
+	"itemContextData": null,
+	"item_context_url": "#Shell-home",
+	"item_type": "QC",
+	"sub_type": null,
+	"text": "Create Sales Order",
+	"createdByFirstname": "John",
+	"createdByLastname": "Doe",
+	"toactions": {
+		"__deferred": {
+			"uri": "/odata/srv/Cp_coll_item('a815cf71-733b-408e-97e8-ef9ea42c8a7a')/toactions"
+		}
+	},
+	"tocollection": {
+		"__deferred": {
+			"uri": "/odata/srv/Cp_coll_item('a815cf71-733b-408e-97e8-ef9ea42c8a7a')/tocollection"
+		}
+	},
+	"toquickcreate": {
+		"__list": ["Cp_Quickcreate('58d085fd-724d-40c3-844d-0f7c2bb66930')"]
+	},
+	"torelated_object": {
+		"__deferred": {
+			"uri": "/odata/srv/Cp_coll_item('a815cf71-733b-408e-97e8-ef9ea42c8a7a')/torelated_object"
+		}
+	},
+	"toscreenshot": {
+		"__deferred": {
+			"uri": "/odata/srv/Cp_coll_item('a815cf71-733b-408e-97e8-ef9ea42c8a7a')/toscreenshot"
+		}
+	},
+	"tosemanticdata": {
+		"__deferred": {
+			"uri": "/odata/srv/Cp_coll_item('a815cf71-733b-408e-97e8-ef9ea42c8a7a')/tosemanticdata"
+		}
+	},
+	"totextanalysis": {
+		"__deferred": {
+			"uri": "/odata/srv/Cp_coll_item('a815cf71-733b-408e-97e8-ef9ea42c8a7a')/totextanalysis"
+		}
+	}
+}

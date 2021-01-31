@@ -1,0 +1,11 @@
+{
+	"name": "extension",
+	"title": "extension",
+	"version": "1.0.0",
+	"description": "",
+	"homepage": "",
+	"icon": "",
+	"bundledPlugins": {
+		"plugin": "file:plugin"
+	}
+}

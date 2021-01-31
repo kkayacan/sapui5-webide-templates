@@ -1,0 +1,28 @@
+{
+	"__metadata": {
+		"id": "/odata/srv/Cp_Quickcreate('58d085fd-724d-40c3-844d-0f7c2bb66930')",
+		"uri": "/odata/srv/Cp_Quickcreate('58d085fd-724d-40c3-844d-0f7c2bb66930')",
+		"type": "COPILOT_V1_SRV.Cp_QuickcreateType"
+	},
+	"changed_by": "IXXXXXX",
+	"changed_on": "2017-07-31T10:20:29.521Z",
+	"created_by": "IXXXXXX",
+	"created_on": "2017-07-31T10:20:29.521Z",
+	"draftid": "",
+	"qc_uuid": "58d085fd-724d-40c3-844d-0f7c2bb66930",
+	"modeljson": null,
+	"object_type": "EPMSalesOrder",
+	"item_uuid": "a815cf71-733b-408e-97e8-ef9ea42c8a7a",
+	"title": "Create Sales Order",
+	"tocollection_item": {
+		"__deferred": {
+			"uri": "/odata/srv/Cp_Quickcreate('58d085fd-724d-40c3-844d-0f7c2bb66930')/tocollection_item"
+		}
+	},
+	"toquickcreate_data": {
+		"__deferred": {
+			"uri": "/odata/srv/Cp_Quickcreate('58d085fd-724d-40c3-844d-0f7c2bb66930')/toquickcreate_data"
+		}
+	},
+	"createdByName": "John Doe"
+}

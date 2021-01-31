@@ -1,0 +1,57 @@
+{
+	"0": [{
+		"createdBy": "IXXXXXX",
+		"createdByFirstName": "John",
+		"createdByLastName": "Doe",
+		"createdOn": "2017-09-26T04:52:17.971Z",
+		"itemType": "NOTE",
+		"contextURI": "#Shell-home",
+		"itemContextData": null,
+		"text": "visited customer Avantel\n\ndiscussed abt product HT-501"
+	}, {
+		"createdBy": "IXXXXXX",
+		"createdByFirstName": "John",
+		"createdByLastName": "Doe",
+		"createdOn": "2017-09-26T05:07:29.869Z",
+		"itemType": "NOTE",
+		"contextURI": "#Shell-home",
+		"itemContextData": null,
+		"text": "discussed unit of measure percentage\n"
+	}, {
+		"createdBy": "IXXXXXX",
+		"createdByFirstName": "John",
+		"createdByLastName": "Doe",
+		"createdOn": "2017-09-26T05:07:39.034Z",
+		"itemType": "NOTE",
+		"contextURI": "#Shell-home",
+		"itemContextData": null,
+		"text": "added UOM KG"
+	}, {
+		"createdBy": "IXXXXXX",
+		"createdByFirstName": "John",
+		"createdByLastName": "Doe",
+		"createdOn": "2017-09-26T06:09:24.046Z",
+		"itemType": "NOTE",
+		"contextURI": "#Shell-home",
+		"itemContextData": null,
+		"text": "created product NoteBOOK 15\n"
+	}, {
+		"createdBy": "IXXXXXX",
+		"createdByFirstName": "John",
+		"createdByLastName": "Doe",
+		"createdOn": "2017-09-26T06:09:34.443Z",
+		"itemType": "NOTE",
+		"contextURI": "#Shell-home",
+		"itemContextData": null,
+		"text": "updated product notebook 17"
+	}, {
+		"createdBy": "IXXXXXX",
+		"createdByFirstName": "John",
+		"createdByLastName": "Doe",
+		"createdOn": "2017-09-28T14:31:13.836Z",
+		"itemType": "NOTE",
+		"contextURI": "#Shell-home",
+		"itemContextData": null,
+		"text": "created notebook 15\n"
+	}]
+}

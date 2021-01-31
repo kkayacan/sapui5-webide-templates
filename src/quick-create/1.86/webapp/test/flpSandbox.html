@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quick Create</title>
+		<style>
+		.copilotQCContainer {
+			padding: 1rem;
+		}
+		</style>
+		<!-- Bootstrap the unified shell in sandbox mode for standalone usage.
+		
+		The renderer is specified in the global Unified Shell configuration object "sap-ushell-config".
+		
+		The fiori2 renderer will render the shell header allowing, for instance,
+		testing of additional application setting buttons.
+		
+		The navigation target resolution service is configured in a way that the empty URL hash is
+		resolved to our own application.
+		
+		This example uses relative path references for the SAPUI5 resources and test-resources;
+		it might be necessary to adapt them depending on the target runtime platform.
+		The sandbox platform is restricted to development or demo use cases and must NOT be used
+		for productive scenarios.
+		-->
+	<script type="text/javascript">
+		window["sap-ushell-config"] = {
+			defaultRenderer: "fiori2",
+				renderers: {
+					fiori2: {
+						componentData: {
+							config: {
+								search: "hidden"
+							}
+						}
+					}
+				},
+				applications: {
+					"Products-display": {
+						additionalInformation: "SAPUI5.Component=com.template.quick-create",
+						applicationType: "URL",
+						url: "../" ,
+						description: "Quick Create 1.86" 
+					}
+				}
+			};
+	</script>
+	<script src="../test-resources/sap/ushell/bootstrap/sandbox.js" id="sap-ushell-bootstrap"></script>
+	<!-- Bootstrap the UI5 core library -->
+	<script id="sap-ui-bootstrap"
+			src="../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m, sap.ushell, sap.collaboration"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"com.template.quick-create": "../"}'
+			data-sap-ui-frameOptions='allow'>// NON-SECURE setting for testing environment
+	</script>
+	<script type="text/javascript">
+		sap.ui.getCore().attachInit(function() {
+		// initialize the ushell sandbox component
+			var oComp = sap.ui.getCore().createComponent({
+				name: "com.template.quick-create",
+				id: "quickCreateComp",
+				height: "100%"
+			});
+			var oComponentContainer = new sap.ui.core.ComponentContainer({
+				component: oComp
+			});
+			var QuickCreateAPI = {
+			// function to get local mock JSON file
+				getLocalJSONObject: function(path) {
+					var fileContent = $.ajax({
+						type: "GET",
+						url: path,
+						async: false
+					}).responseText;
+					return JSON.parse(fileContent);
+				},
+				getCollectionItem: function() {
+					return this.getLocalJSONObject('/webapp/localService/CollectionItem.json');
+				},
+				setRootView: function() {
+					console.warn("Method setRootView() unimplemented in mock");
+				},
+				getQuickCreateItem: function() {
+					return this.getLocalJSONObject('/webapp/localService/QuickCreateItem.json');
+				},
+				isCurrentUserCreator: function() {
+					return true;
+				},
+				attachAutofillLineItems: function() {
+					console.warn("Method attachAutofillLineItems() unimplemented in mock");
+				},
+				fireQuickCreateViewCreated: function() {
+					console.warn("Method fireQuickCreateViewCreated() unimplemented in mock");
+				},
+				updateDraftID: function() {
+					console.warn("Method updateDraftID() unimplemented in mock");
+				},
+				calculateViewHeight: function() {
+					console.warn("Method calculateViewHeight() unimplemented in mock");
+				},
+				objectCreated: function() {
+					console.warn("Method objectCreated() unimplemented in mock");
+				},
+				getCollectionItems: function() {
+					return this.getLocalJSONObject('/webapp/localService/CollectionItems.json');
+				},
+				getCollectionParticipants: function() {
+					return this.getLocalJSONObject('/webapp/localService/CollectionParticipants.json');
+				}
+			};
+			oComponentContainer.addStyleClass("copilotQCContainer");
+			oComponentContainer.placeAt("content");
+			oComp.oQuickCreateAPI = QuickCreateAPI;
+		});
+	</script>
+	</head>
+	<!-- UI Content -->
+	<body class="sapUiBody sapUiSizeCompact copilotQuickCreateContainerBox" id="content"></body>
+</html>
